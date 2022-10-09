@@ -80,7 +80,7 @@ else
 fi
 echo "####### END INSTALLING CPANEL #######"
 
-if [ -d /usr/local/cpanel/whostmgr/docroot/cgi/configserver/csf ] ; then
+	if [ -d /usr/local/cpanel/whostmgr/docroot/cgi/configserver/csf ] ; then
 			echo "CSF is already installed on the server!";
 		else
 			echo -n "csf not detected! Would you like to install? (y/n) ";
