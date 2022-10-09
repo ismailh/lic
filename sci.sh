@@ -1036,3 +1036,4 @@ history -c
 echo "" > /root/.bash_history
 
 echo "#### Please wait 10 min for serv restart any issue please contact ismail@bluedot.ltd  ####"
+fi
