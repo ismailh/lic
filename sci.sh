@@ -54,15 +54,7 @@ echo "DNS1=127.0.0.1" >> $ETHCFG
 echo "DNS2=8.8.8.8" >> $ETHCFG
 
 echo "Rewriting /etc/resolv.conf..."
-
-echo "options timeout:5 attempts:2" > /etc/resolv.conf
-echo "nameserver 127.0.0.1" >> /etc/resolv.conf # local
-echo "nameserver 208.67.222.222" >> /etc/resolv.conf # OpenDNS
-echo "nameserver 8.20.247.20" >> /etc/resolv.conf # Comodo
 echo "nameserver 8.8.8.8" >> /etc/resolv.conf # Google
-echo "nameserver 199.85.126.10" >> /etc/resolv.conf # Norton
-echo "nameserver 8.26.56.26" >> /etc/resolv.conf # Comodo
-echo "nameserver 209.244.0.3" >> /etc/resolv.conf # Level3
 echo "nameserver 8.8.4.4" >> /etc/resolv.conf # Google
 echo "######### END CONFIGURING DNS AND NETWORK ########"
 
@@ -87,10 +79,6 @@ else
 	rm -f /root/hostname
 fi
 echo "####### END INSTALLING CPANEL #######"
-
-echo "####### Force cPanel update #######"
-sleep 5
-/scripts/upcp --force
 
 if [ -d /usr/local/cpanel/whostmgr/docroot/cgi/configserver/csf ] ; then
 			echo "CSF is already installed on the server!";
