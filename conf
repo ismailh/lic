@@ -1,3 +1,4 @@
+#!/bin/bash
 echo " Setting CSF..."
 yum remove firewalld -y
 yum -y install iptables-services wget perl unzip net-tools perl-libwww-perl perl-LWP-Protocol-https perl-GDGraph
